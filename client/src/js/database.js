@@ -17,10 +17,9 @@ const initdb = async () =>
 export const putDb = async (content) => {
   const db = await openDB("jate", 1);
   const tx = db.transaction('jate', 'readwrite');
-  const oStore = tx.objectstore('jate');
+  const oStore = tx.objectStore('jate');
   const dataReq = oStore.put({jate: content});
   const data = await dataReq;
-  if (err) throw err;
   console.log("Data added to database", data);
   
 };
@@ -29,10 +28,9 @@ export const putDb = async (content) => {
 export const getDb = async () => {
   const db = await openDB('jate', 1);
   const tx = db.transaction('jate', 'readonly');
-  const oStore = tx.objectstore('jate');
-  const dataReq = oStore.getALL();
+  const oStore = tx.objectStore('jate');
+  const dataReq = oStore.getAll();
   const data = await dataReq;
-  if (err) throw err;
   console.log('Data retrieved', data);
 
 };
