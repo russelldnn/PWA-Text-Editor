@@ -37,6 +37,13 @@
 
   # Questions
   if you have further questions feel free to email me at russelldnn@gmail.com or check my github for clarification at russelldnn
+  
+  # Demo
+  https://pwa-text-editor-russelldunn.herokuapp.com/
+  
+  # Showcase
+  ![1](https://user-images.githubusercontent.com/104922988/181745724-44d3895a-83ee-4b3a-bbc4-da3385759601.PNG)
+
 
 
 
